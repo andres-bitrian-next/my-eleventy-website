@@ -10,7 +10,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['14.17.6']
+        node-version: ['20']
+
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
